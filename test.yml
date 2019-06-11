@@ -1,0 +1,22 @@
+person:
+  name: "Jane Doe"
+  age: 99
+  salary: 50000.00
+  management: true
+customer:
+  companies:
+    - "Apple"
+    - "Dell"
+    - "IBM"
+    - "HP"
+    - "Linda"
+movie: 
+  author: 
+    id: 1
+    title: "Batman"
+friends: 
+  - { id: 1, name: "Michael Lee"}
+  - id: 2
+    name: "Melinda Pinkerton"
+  - id: 3
+    name: "God"
