@@ -1,0 +1,25 @@
+{
+  "name": "sls-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-offline": "^5.3.3"
+  },
+  "scripts": {
+    "dev": "sls offline start --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iTrauco/node-serverless-apis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iTrauco/node-serverless-apis/issues"
+  },
+  "homepage": "https://github.com/iTrauco/node-serverless-apis#readme"
+}
