@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "handler.js",
-  "dependencies": {},
+  "dependencies": {
+    "serverless-dynamodb-local": "^0.2.38"
+  },
   "devDependencies": {
     "serverless-offline": "^5.3.3"
   },
