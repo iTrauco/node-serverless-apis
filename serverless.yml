@@ -1,4 +1,11 @@
 service: sls-api
+custom:
+  dynamodb:
+    start:
+      port: 8000
+      migrate: true # creates defined table, e.g. 'jobs'
+      inMemory: true
+      onStart: true
 provider:
   name: aws
   runtime: nodejs10.x
@@ -32,4 +39,18 @@ functions:
           request:
             parameters:
               id: true
-
+resources:
+  Resources: 
+    JobsDynamoDBTable:
+      Type: "AWS::DynamoDB::Table"
+      Properties: 
+        TableName: "sls-api-jobs"
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
