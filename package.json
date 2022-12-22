@@ -7,7 +7,7 @@
     "serverless-dynamodb-local": "^0.2.38"
   },
   "devDependencies": {
-    "serverless-offline": "^5.3.3"
+    "serverless-offline": "^12.0.3"
   },
   "scripts": {
     "dev": "sls offline start --port 3000",
